@@ -13,6 +13,7 @@ RUN python -m venv ./venv
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
+RUN pip install mailgw_temporary_email
 
 # RUN pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/
 # RUN pip config set global.trusted-host mirrors.aliyun.com
